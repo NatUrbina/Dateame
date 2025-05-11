@@ -1,0 +1,12 @@
+service: dateame-scrapy
+
+provider:
+  name: openwhisk
+  runtime: python:3.7
+
+functions:
+  curacao:
+    handler: handler.run
+
+plugins:
+  - serverless-openwhisk
